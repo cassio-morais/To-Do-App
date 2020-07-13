@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>To-do App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../static/bulma.min.css">
+    </head>
+
+<body>
+    <section class="hero is-black">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title has-text-centered">
+              TO-DO APP
+            </h1>
+          </div>
+        </div>
+      </section>
+    
+            <section class="section">
+              <div class="columns">
+                  <div class="column is-half is-offset-one-quarter">
+
+                        <form id="task" method="POST">
+
+                            <div class="field">
+                              <label class="label">Você está atualizando sua tarefa...</label>
+                              <textarea name="text-area" form="task" class="textarea" placeholder="Digite sua tarefa aqui...">{{task.task}}</textarea>
+                            </div>
+
+                            <div class="field">
+                                <button class="button is-link">
+                                  Atualizar tarefa
+                                </button>
+                            </div>
+
+                        </form>
+
+                  </div>
+              </div>     
+            </section> 
+</body>
+</html>
